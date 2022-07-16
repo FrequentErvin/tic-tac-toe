@@ -23,7 +23,14 @@
 html{
     height: 100vh;
 }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container{
+    margin-top: 150px;
+    width: 33%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,6 +43,7 @@ html{
     align-items: center;
 }
 .restart{
+    margin: var(--spacing-lg);
     cursor: pointer;
     transition-delay: 0.1ms;
     font-size: 24px;
@@ -47,4 +55,49 @@ html{
 }
 .restart:hover{
     transform: scale(1.01);
+}
+.upperbar{
+    width: 100%;
+    flex: 1;
+}
+.mode-modifiers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.easy-mode, .hard-mode{
+    margin: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.current-turn{
+    display: flex;
+    flex: 1;
+}
+.show-x, .show-y{
+    font-size: 24px;
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gameboard{
+    width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.gameboard div{
+    height: 133px;
 }
