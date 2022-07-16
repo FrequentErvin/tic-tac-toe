@@ -123,3 +123,9 @@ header{
 .gameboard div:nth-child(n+7) {
     border-bottom: none;
 }
+.proper-size{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
